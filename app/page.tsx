@@ -15,6 +15,7 @@ import {
   Github,
   Linkedin,
   Mail,
+  Phone,
   Download,
   ExternalLink,
   Award,
@@ -37,10 +38,8 @@ import {
   ArrowRight,
   Sparkles,
   Cloud,
-  Cpu,
   BarChart3,
   Search,
-  Monitor,
 } from "lucide-react"
 
 function RevealSection({
@@ -144,13 +143,20 @@ ${formData.message}
   }
 
   const handleResumeDownload = () => {
-    // Create a temporary link element and trigger download
-    const link = document.createElement("a")
-    link.href = "/Mridul_Khanna_Resume.pdf"
-    link.download = "Mridul_Khanna_Resume.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+    // Try direct download first
+    try {
+      const link = document.createElement("a")
+      link.href = "/Mridul_Khanna_Resume.pdf"
+      link.download = "Mridul_Khanna_Resume.pdf"
+      link.target = "_blank"
+      link.rel = "noopener noreferrer"
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    } catch (error) {
+      // Fallback: open in new tab
+      window.open("/Mridul_Khanna_Resume.pdf", "_blank")
+    }
   }
 
   const navItems = [
@@ -218,52 +224,28 @@ ${formData.message}
 
   const projects = [
     {
-      title: "AWS Image Annotation App",
+      title: "Credit Risk Modeling with ML",
       description:
-        "Built a scalable, serverless web app on AWS (EC2, Lambda, RDS, S3) with Gemini AI for auto-captions and real-time thumbnail generation",
-      tech: ["AWS", "Lambda", "S3", "RDS", "Gemini AI", "Flask"],
-      gradient: "from-orange-500 to-red-500",
-      icon: <Cloud className="w-6 h-6" />,
-    },
-    {
-      title: "Credit Risk Modeling",
-      description:
-        "Ensemble XGBoost, Decision Trees, and Random Forest model achieved 97.7% accuracy, 0.998 AUC-ROC, and 94.7% F1-score",
-      tech: ["Python", "XGBoost", "scikit-learn", "Pandas"],
-      gradient: "from-blue-500 to-cyan-500",
+        "Developed a credit risk classification model using financial indicators across occupations with XGBoost, Decision Trees, and Random Forest. Achieved 97.7% accuracy, 0.998 AUC-ROC, and 94.7% F1-score, enabling risk profiling for financial institutions.",
+      tech: ["Python", "XGBoost", "Decision Trees", "Random Forest", "scikit-learn"],
+      metrics: "97.7% Accuracy",
       icon: <BarChart3 className="w-6 h-6" />,
     },
     {
       title: "AdSnap – LLM-Powered Ad Banner Generator",
       description:
-        "Modular AI pipeline using GPT-3.5 and OpenCV to generate ad slogans, dynamic font placement, and CTA integration",
-      tech: ["Python", "GPT-3.5", "OpenCV"],
-      gradient: "from-purple-500 to-pink-500",
+        "Built a modular AI-powered pipeline that transforms product images and tones into production-ready ad banners using GPT-3.5 and OpenCV. Features slogan generation, dynamic font placement, contrast-aware text rendering, and CTA integration.",
+      tech: ["Python", "GPT-3.5", "OpenCV", "AI Pipeline"],
+      metrics: "Production-Ready",
       icon: <Sparkles className="w-6 h-6" />,
     },
     {
       title: "Premature Mortality Risk Analysis",
       description:
-        "EDA and regression modeling on 3,000+ US counties to identify socioeconomic and healthcare predictors of premature mortality",
-      tech: ["Python", "Pandas", "Matplotlib", "Seaborn"],
-      gradient: "from-emerald-500 to-teal-500",
+        "Performed exploratory data analysis on public health data of 3,000+ US counties using Multiple Linear Regression and Decision Trees to identify socioeconomic, healthcare access and behavioral predictors of premature mortality. Built interpretable models to evaluate predictor impact for data-driven health policy and resource allocation.",
+      tech: ["Python", "Multiple Linear Regression", "Decision Trees", "EDA"],
+      metrics: "3,000+ Counties",
       icon: <Search className="w-6 h-6" />,
-    },
-    {
-      title: "Real-Time Malware Detection",
-      description:
-        "Implemented and compared multiple ML classifiers to detect malicious executables; deployed highest-accuracy model in real-time",
-      tech: ["Python", "scikit-learn"],
-      gradient: "from-violet-500 to-purple-500",
-      icon: <Monitor className="w-6 h-6" />,
-    },
-    {
-      title: "Autonomous Driving Car Simulation",
-      description:
-        "Built and trained a self-driving car simulation using Deep Learning, Computer Vision, and CNNs to navigate virtual tracks",
-      tech: ["Python", "OpenCV", "TensorFlow", "CNN"],
-      gradient: "from-indigo-500 to-blue-500",
-      icon: <Cpu className="w-6 h-6" />,
     },
   ]
 
@@ -272,45 +254,48 @@ ${formData.message}
       title: "Software Engineer",
       company: "Bank of America",
       location: "Gujarat, India",
-      period: "Jun '22–Jun '24",
+      period: "Jun 2022–Jun 2024",
       description:
-        "At Bank of America, I worked across the full development pipeline to build secure Net Banking features such as e-signatures, document exchange, and backend services used by over 39 million daily users. I developed scalable REST APIs with Spring Boot, optimized SQL pipelines, and improved platform reliability by raising unit test coverage by ~40% with JUnit. I also collaborated on debugging and integration with MuleSoft, ensuring data accuracy and smoother deployments that accelerated release cycles by ~30%. My contributions were recognized with five Bronze Awards for technical excellence and cross-team collaboration.",
+        "Engineered critical modules of Bank of America's Net Banking platform, powering secure document exchange, e-signatures, and backend operations supporting ~39 million daily users. Developed scalable REST APIs (Spring Boot), restructured SQL pipelines, and raised unit test coverage by ~40% (JUnit), improving reliability and accelerating deployment cycles. Supported debugging and testing (MuleSoft), ensuring data flow accuracy and reducing release issues. Awarded 5 Bronze Awards for high impact project delivery and entrusted with directing a $2,000 CSR grant to NGOs as one of the top contributors in 2023, demonstrating social responsibility and leadership.",
       icon: <TrendingUp className="w-6 h-6" />,
       color: "from-blue-500 to-cyan-500",
-      achievements: ["39M+ Users", "30% Faster Deployments", "40% Fewer Defects"],
+      achievements: ["39M+ Users", "40% Test Coverage", "5 Bronze Awards", "$2K CSR Grant"],
+      isActive: false,
     },
     {
       title: "Business Analyst Intern",
       company: "Vah Vah Institute Pvt. Ltd.",
       location: "Bengaluru, India",
-      period: "Nov '21–May '22",
+      period: "Nov 2021–May 2022",
       description:
-        "As a Business Analyst Intern, I collaborated with sales and marketing teams to transform raw data into actionable insights. I designed and deployed interactive dashboards in Google Data Studio that gave leadership real-time visibility and improved decision-making. To streamline reporting, I built Python and BigQuery ETL pipelines that automated data workflows, cutting manual effort by 50%. These initiatives accelerated data-driven decisions and contributed to a 30% uplift in lead-to-sale conversions, strengthening alignment between sales and marketing.",
+        "Identified and eliminated revenue-impacting inefficiencies in marketing and sales and boosting conversion by 30% through actionable insights and optimized lead targeting (Google Analytics and Data Studio). Collaborated with stakeholders to build automated reports and dashboards (Python, BigQuery, Data Studio), reducing manual effort by 50% and accelerating data-driven decision making.",
       icon: <Award className="w-6 h-6" />,
       color: "from-purple-500 to-pink-500",
-      achievements: ["30% Conversion Uplift", "50% Less Manual Reporting", "ETL Automation"],
+      achievements: ["30% Conversion Boost", "50% Manual Effort Reduction", "Automated Dashboards"],
+      isActive: false,
     },
     {
       title: "Data Science & ML Teaching Assistant",
       company: "Coding Ninjas",
-      location: "Remote (India)",
-      period: "Feb '21–Apr '21",
+      location: "New Delhi, India",
+      period: "Feb 2021–Apr 2021",
       description:
-        "As a Teaching Assistant, I mentored students on real-world machine learning projects and provided personalized guidance on Python and scikit-learn. I resolved over 700 queries, created hands-on tutorials, and consistently maintained a 4.9/5 satisfaction rating, helping students build confidence in applying ML to practical problems.",
+        "Mentored students on 700+ queries related to Machine Learning concepts and real-world project roadblocks, earning an overall performance rating of 4.9/5 from students.",
       icon: <Users className="w-6 h-6" />,
       color: "from-emerald-500 to-teal-500",
-      achievements: ["700+ Queries Resolved", "4.9/5 Satisfaction", "Hands-on Tutorials"],
+      achievements: ["700+ Queries", "4.9/5 Rating", "ML Mentorship"],
+      isActive: false,
     },
     {
       title: "Customer Service Representative",
       company: "OTR",
       location: "Sydney, Australia",
-      period: "Nov '24–Present",
+      period: "Nov 2024–Present",
       description:
-        "Oversaw daily POS operations in a high-volume setting, processing 50+ transactions per hour. Improved efficiency through workflow optimization, delivered staff training, and upheld 95%+ satisfaction, showcasing skills in operations, process improvement, and customer engagement.",
+        "Operated POS systems and managed 50+ transactions/hour, ensuring accuracy, efficiency, and smooth operations in a high-volume environment.",
       icon: <Briefcase className="w-6 h-6" />,
       color: "from-teal-500 to-cyan-500",
-      achievements: ["50+ Transactions/Hour", "20% Faster Checkout", "95%+ Satisfaction"],
+      achievements: ["50+ Transactions/Hour", "High-Volume Operations", "POS Systems"],
       isActive: true,
     },
   ]
@@ -425,12 +410,18 @@ ${formData.message}
                 {isLoaded && <TypingAnimation text="Hi, I'm Mridul — a developer-turned-data scientist." speed={50} />}
               </div>
               <h1 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight">
-                HE CHECK CHECK{" "}
+                I transform business challenges into{" "}
                 <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                   data-driven, scalable solutions
                 </span>{" "}
                 through analytics, machine learning, and engineering.
               </h1>
+              <p className="text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
+                Master's in Computer Science (specializing in Data Science & AI) at the University of Sydney with 2
+                years' experience as a Software Engineer at Bank of America. Skilled in Python, SQL, Data Analysis, and
+                Machine Learning, with a proven record of delivering scalable systems and analytics solutions that drive
+                measurable business impact.
+              </p>
               <div className="flex flex-wrap gap-3 mt-8">
                 <Button
                   size="lg"
@@ -1181,6 +1172,10 @@ ${formData.message}
                   <div className="flex items-center justify-center gap-3 text-slate-300 hover:text-blue-400 transition-all duration-300 cursor-pointer transform hover:scale-105 group">
                     <Mail className="w-5 h-5 group-hover:animate-bounce" />
                     <span className="text-sm">khannamridul20@gmail.com</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-3 text-slate-300 hover:text-blue-400 transition-all duration-300 cursor-pointer transform hover:scale-105 group">
+                    <Phone className="w-5 h-5 group-hover:animate-bounce" />
+                    <span className="text-sm">+61490299939</span>
                   </div>
                   <div className="flex items-center justify-center gap-3 text-slate-300 hover:text-blue-400 transition-all duration-300 cursor-pointer transform hover:scale-105 group">
                     <Github className="w-5 h-5 group-hover:animate-bounce" />
