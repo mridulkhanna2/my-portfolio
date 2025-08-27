@@ -425,7 +425,7 @@ ${formData.message}
                 {isLoaded && <TypingAnimation text="Hi, I'm Mridul — a developer-turned-data scientist." speed={50} />}
               </div>
               <h1 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight">
-                I transform business challenges into{" "}
+                HE CHECK CHECK{" "}
                 <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                   data-driven, scalable solutions
                 </span>{" "}
