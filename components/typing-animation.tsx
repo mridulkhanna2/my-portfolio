@@ -5,10 +5,9 @@ import { useState, useEffect } from "react"
 interface TypingAnimationProps {
   text: string
   speed?: number
-  className?: string
 }
 
-export function TypingAnimation({ text, speed = 100, className = "" }: TypingAnimationProps) {
+export function TypingAnimation({ text, speed = 100 }: TypingAnimationProps) {
   const [displayText, setDisplayText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -23,10 +22,5 @@ export function TypingAnimation({ text, speed = 100, className = "" }: TypingAni
     }
   }, [currentIndex, text, speed])
 
-  return (
-    <span className={className}>
-      {displayText}
-      <span className="animate-pulse">|</span>
-    </span>
-  )
+  return <span>{displayText}</span>
 }
