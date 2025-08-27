@@ -169,23 +169,50 @@ ${formData.message}
     {
       title: "Languages & Frameworks",
       icon: <Code className="w-6 h-6" />,
-      skills: ["Python", "Java", "SQL", "Spring Boot", "REST APIs", "JUnit"],
+      skills: [
+        "Python",
+        "SQL",
+        "R",
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "Git",
+        "JUnit",
+        "Postman",
+        "OpenAPI/Swagger",
+        "JSON",
+        "XML",
+        "OpenCV",
+      ],
       gradient: "from-blue-500 to-cyan-500",
       description: "Core programming languages and development frameworks",
     },
     {
-      title: "Data Science & ML",
+      title: "Data Science & Analytics",
       icon: <BarChart3 className="w-6 h-6" />,
-      skills: ["scikit-learn", "XGBoost", "Pandas", "NumPy", "OpenCV", "Matplotlib", "TensorFlow"],
+      skills: [
+        "Statistics",
+        "Data Wrangling",
+        "Machine Learning",
+        "pandas",
+        "NumPy",
+        "scikit-learn",
+        "Matplotlib",
+        "Seaborn",
+        "Power BI",
+        "Tableau",
+        "Excel",
+        "Google Analytics",
+      ],
       gradient: "from-purple-500 to-pink-500",
-      description: "Machine learning libraries and data analysis tools",
+      description: "Statistics, data wrangling, and machine learning with modern analytics tools",
     },
     {
-      title: "Cloud & Analytics",
+      title: "Cloud & Systems",
       icon: <Cloud className="w-6 h-6" />,
-      skills: ["Power BI", "Tableau", "GCP", "AWS", "BigQuery", "GitHub Actions", "Jenkins"],
+      skills: ["BigQuery", "AWS", "MySQL", "Oracle", "Jenkins", "Bitbucket Pipelines", "MuleSoft"],
       gradient: "from-emerald-500 to-teal-500",
-      description: "Cloud platforms and business intelligence solutions",
+      description: "Databases, cloud platforms, and system automation",
     },
   ]
 
@@ -210,7 +237,7 @@ ${formData.message}
       title: "AdSnap – LLM-Powered Ad Banner Generator",
       description:
         "Modular AI pipeline using GPT-3.5 and OpenCV to generate ad slogans, dynamic font placement, and CTA integration",
-      tech: ["Python", "GPT-3.5", "OpenCV", "Flask"],
+      tech: ["Python", "GPT-3.5", "OpenCV"],
       gradient: "from-purple-500 to-pink-500",
       icon: <Sparkles className="w-6 h-6" />,
     },
@@ -226,7 +253,7 @@ ${formData.message}
       title: "Real-Time Malware Detection",
       description:
         "Implemented and compared multiple ML classifiers to detect malicious executables; deployed highest-accuracy model in real-time",
-      tech: ["Python", "scikit-learn", "TensorFlow", "Flask"],
+      tech: ["Python", "scikit-learn"],
       gradient: "from-violet-500 to-purple-500",
       icon: <Monitor className="w-6 h-6" />,
     },
@@ -247,7 +274,7 @@ ${formData.message}
       location: "Gujarat, India",
       period: "Jun '22–Jun '24",
       description:
-        "At Bank of America, I led design and development of secure Net Banking features—e-signatures, document exchange, and backend services—for over 39 million daily users. By architecting Spring Boot APIs and optimizing SQL pipelines, I accelerated release cycles by 30% and reduced defects by 40% through enhanced unit testing. I earned 5 Bronze Awards for project excellence and was entrusted with a $2,000 CSR grant to support NGOs.",
+        "At Bank of America, I worked across the full development pipeline to build secure Net Banking features such as e-signatures, document exchange, and backend services used by over 39 million daily users. I developed scalable REST APIs with Spring Boot, optimized SQL pipelines, and improved platform reliability by raising unit test coverage by ~40% with JUnit. I also collaborated on debugging and integration with MuleSoft, ensuring data accuracy and smoother deployments that accelerated release cycles by ~30%. My contributions were recognized with five Bronze Awards for technical excellence and cross-team collaboration.",
       icon: <TrendingUp className="w-6 h-6" />,
       color: "from-blue-500 to-cyan-500",
       achievements: ["39M+ Users", "30% Faster Deployments", "40% Fewer Defects"],
@@ -258,7 +285,7 @@ ${formData.message}
       location: "Bengaluru, India",
       period: "Nov '21–May '22",
       description:
-        "Streamlined decision-making in sales and marketing by developing Python & BigQuery ETL processes and interactive Data Studio dashboards. Automated reports cut manual effort by 50% and drove a 30% increase in lead-to-sale conversion.",
+        "As a Business Analyst Intern, I collaborated with sales and marketing teams to transform raw data into actionable insights. I designed and deployed interactive dashboards in Google Data Studio that gave leadership real-time visibility and improved decision-making. To streamline reporting, I built Python and BigQuery ETL pipelines that automated data workflows, cutting manual effort by 50%. These initiatives accelerated data-driven decisions and contributed to a 30% uplift in lead-to-sale conversions, strengthening alignment between sales and marketing.",
       icon: <Award className="w-6 h-6" />,
       color: "from-purple-500 to-pink-500",
       achievements: ["30% Conversion Uplift", "50% Less Manual Reporting", "ETL Automation"],
@@ -269,7 +296,7 @@ ${formData.message}
       location: "Remote (India)",
       period: "Feb '21–Apr '21",
       description:
-        "Mentored students on real-world machine learning projects, creating hands-on tutorials in Python and scikit-learn that achieved a 4.9/5 satisfaction rating and deepened practical ML skills.",
+        "As a Teaching Assistant, I mentored students on real-world machine learning projects and provided personalized guidance on Python and scikit-learn. I resolved over 700 queries, created hands-on tutorials, and consistently maintained a 4.9/5 satisfaction rating, helping students build confidence in applying ML to practical problems.",
       icon: <Users className="w-6 h-6" />,
       color: "from-emerald-500 to-teal-500",
       achievements: ["700+ Queries Resolved", "4.9/5 Satisfaction", "Hands-on Tutorials"],
@@ -280,10 +307,11 @@ ${formData.message}
       location: "Sydney, Australia",
       period: "Nov '24–Present",
       description:
-        "At a busy gas station and convenience store, I manage high-volume POS service—fuel and retail—serving 50+ customers per hour. I optimized checkout workflows to reduce transaction times by 20%, trained new staff on system processes, and consistently maintained customer satisfaction above 95%.",
+        "Oversaw daily POS operations in a high-volume setting, processing 50+ transactions per hour. Improved efficiency through workflow optimization, delivered staff training, and upheld 95%+ satisfaction, showcasing skills in operations, process improvement, and customer engagement.",
       icon: <Briefcase className="w-6 h-6" />,
       color: "from-teal-500 to-cyan-500",
       achievements: ["50+ Transactions/Hour", "20% Faster Checkout", "95%+ Satisfaction"],
+      isActive: true,
     },
   ]
 
@@ -293,7 +321,7 @@ ${formData.message}
       organization: "Australian Red Cross",
       period: "Jul '25–Present",
       description:
-        "I provide weekly visits and digital support to isolated seniors, and organize virtual events that increased volunteer engagement by 40%.",
+        "Support isolated seniors through ongoing engagement and digital assistance, helping strengthen community connection and inclusion.",
       icon: <Heart className="w-8 h-8" />,
       color: "text-red-400",
       isActive: true,
@@ -301,17 +329,18 @@ ${formData.message}
     {
       title: "Senior Buddy",
       organization: "Women in Engineering, University of Sydney",
-      period: "2025 – Present",
+      period: "Jul '25–Present",
       description: "Mentoring new students and promoting diversity in tech",
       icon: <Users className="w-8 h-8" />,
       color: "text-blue-400",
       isActive: true,
     },
     {
-      title: "ESG Champion",
+      title: "ESG Volunteer Champion",
       organization: "Bank of America",
       period: "2023",
-      description: "Led grant funding for child protection initiatives",
+      description:
+        "Contributed to CSR initiatives supporting education for underprivileged children and was recognized as a top contributor with a $2000 grant donation to further these efforts.",
       icon: <Award className="w-8 h-8" />,
       color: "text-emerald-400",
       isActive: false,
@@ -320,7 +349,8 @@ ${formData.message}
       title: "Education Volunteer",
       organization: "Karuna NMO",
       period: "2021",
-      description: "Tutored underserved students in STEM subjects",
+      description:
+        "Mentored children by supporting their education, building good study practices, and fostering values that promote confidence and personal growth.",
       icon: <BookOpen className="w-8 h-8" />,
       color: "text-purple-400",
       isActive: false,
@@ -397,9 +427,9 @@ ${formData.message}
               <h1 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight">
                 I transform business challenges into{" "}
                 <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                  intelligent systems
+                  data-driven, scalable solutions
                 </span>{" "}
-                using machine learning, data engineering, and scalable code.
+                through analytics, machine learning, and engineering.
               </h1>
               <div className="flex flex-wrap gap-3 mt-8">
                 <Button
@@ -508,7 +538,7 @@ ${formData.message}
                 <Card className="bg-gradient-to-br from-slate-800/80 to-slate-700/80 border-slate-600/50 hover:border-blue-500/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/20 overflow-hidden group">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-slate-600/10 to-blue-500/10 opacity-30 animate-gradient group-hover:opacity-40 transition-opacity duration-500"></div>
 
-                  <CardContent className="relative z-10 p-8">
+                  <CardContent className="relative z-10 p-6">
                     <div className="flex items-start gap-6">
                       {/* Enhanced Animated Icon Column */}
                       <div className="flex flex-col items-center space-y-4 flex-shrink-0">
@@ -563,34 +593,21 @@ ${formData.message}
                           </div>
                         </div>
 
-                        <div className="space-y-6 text-base text-slate-300 leading-relaxed">
+                        <div className="space-y-4 text-base text-slate-300 leading-relaxed">
                           <p className="group/text hover:text-white transition-colors duration-300">
-                            I began my career as a{" "}
-                            <span className="text-blue-400 font-semibold underline decoration-blue-400/30 hover:decoration-blue-400 transition-all duration-300">
-                              backend engineer at Bank of America
-                            </span>
-                            , architecting APIs that seamlessly served over{" "}
-                            <span className="text-cyan-400 font-semibold underline decoration-cyan-400/30 hover:decoration-cyan-400 transition-all duration-300">
-                              39 million daily users
-                            </span>
-                            . While optimizing performance and reliability, I discovered my true passion: leveraging
-                            data to drive strategic decisions.
+                            I began my career as a backend engineer at Bank of America, architecting APIs that
+                            seamlessly served over 39 million daily users. While optimizing performance and reliability,
+                            I discovered my true passion: leveraging data to drive strategic decisions.
                           </p>
 
                           <p className="group/text hover:text-white transition-colors duration-300">
-                            That realization led me to the{" "}
-                            <span className="text-purple-400 font-semibold underline decoration-purple-400/30 hover:decoration-purple-400 transition-all duration-300">
-                              University of Sydney's Data Science master's program
-                            </span>
-                            , where I now blend robust engineering practices with advanced analytics to build{" "}
-                            <span className="text-emerald-400 font-semibold underline decoration-emerald-400/30 hover:decoration-emerald-400 transition-all duration-300">
-                              high-impact solutions that accelerate business growth
-                            </span>
-                            .
+                            That realization led me to the University of Sydney's Computer Science post-graduate program
+                            specialising in Data Science, where I now blend robust engineering practices with advanced
+                            analytics to build high-impact solutions that accelerate business growth.
                           </p>
                         </div>
 
-                        <div className="flex flex-wrap gap-4 mt-8">
+                        <div className="flex flex-wrap gap-4 mt-6">
                           <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 px-4 py-2 rounded-full border border-blue-500/30 hover:border-blue-400/50 transition-all duration-300 hover:scale-105 group/stat">
                             <span className="text-blue-400 font-semibold">39M+ Users</span>
                             <div className="w-0 h-0.5 bg-blue-400 group-hover/stat:w-full transition-all duration-300 mt-1"></div>
@@ -618,7 +635,7 @@ ${formData.message}
                   {/* Much more subtle background */}
                   <div className="absolute inset-0 bg-gradient-to-r from-slate-700/5 via-slate-600/5 to-slate-700/5 opacity-50 animate-gradient group-hover:opacity-60 transition-opacity duration-500"></div>
 
-                  <CardContent className="relative z-10 p-8">
+                  <CardContent className="relative z-10 p-6">
                     <div className="flex items-start gap-6">
                       {/* Simplified Icon Column - Less Colors */}
                       <div className="flex flex-col items-center space-y-4 flex-shrink-0">
@@ -667,7 +684,7 @@ ${formData.message}
                           </div>
                         </div>
 
-                        <div className="space-y-6 text-base text-slate-300 leading-relaxed">
+                        <div className="space-y-4 text-base text-slate-300 leading-relaxed">
                           <p className="group/text hover:text-white transition-colors duration-300">
                             I'm fueled by the challenge of turning{" "}
                             <span className="text-blue-400 font-semibold underline decoration-blue-400/30 hover:decoration-blue-400 transition-all duration-300">
@@ -701,7 +718,7 @@ ${formData.message}
                           </p>
                         </div>
 
-                        <div className="flex flex-wrap gap-4 mt-8">
+                        <div className="flex flex-wrap gap-4 mt-6">
                           <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 px-4 py-2 rounded-full border border-blue-500/30 hover:border-blue-400/50 transition-all duration-300 hover:scale-105 group/stat">
                             <span className="text-blue-400 font-semibold">Industry-Leading Accuracy</span>
                             <div className="w-0 h-0.5 bg-blue-400 group-hover/stat:w-full transition-all duration-300 mt-1"></div>
@@ -893,17 +910,6 @@ ${formData.message}
                         </Badge>
                       ))}
                     </div>
-
-                    {/* Skill proficiency indicator */}
-                    <div className="mt-4 flex items-center gap-2">
-                      <div className="flex-1 bg-slate-700 rounded-full h-1">
-                        <div
-                          className={`bg-gradient-to-r ${category.gradient} h-1 rounded-full animate-pulse`}
-                          style={{ width: `${85 + Math.random() * 15}%` }}
-                        ></div>
-                      </div>
-                      <span className="text-xs text-slate-400">Expert</span>
-                    </div>
                   </CardContent>
                 </Card>
               </RevealSection>
@@ -1022,6 +1028,12 @@ ${formData.message}
                               {achievement}
                             </Badge>
                           ))}
+                          {exp.isActive && (
+                            <div className="flex items-center gap-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 px-3 py-1 rounded-full border border-green-500/30">
+                              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                              <span className="text-xs text-green-300 font-semibold">Active</span>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -1075,9 +1087,9 @@ ${formData.message}
 
                     {/* Impact indicator */}
                     {activity.isActive && (
-                      <div className="mt-3 flex items-center justify-center gap-2">
+                      <div className="mt-3 inline-flex items-center gap-1 bg-gradient-to-r from-green-500/20 to-emerald-500/20 px-2 py-1 rounded-full border border-green-500/30">
                         <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                        <span className="text-xs text-slate-400">Active</span>
+                        <span className="text-xs text-green-300 font-semibold">Active</span>
                       </div>
                     )}
                   </CardContent>
@@ -1216,7 +1228,7 @@ ${formData.message}
                       <label className="block text-sm font-medium text-slate-300 mb-2">Message *</label>
                       <Textarea
                         required
-                        placeholder="Tell me about the role, project requirements, timeline, or any specific questions you have..."
+                        placeholder="I'd love to hear about opportunities, projects, or ideas and explore how I can contribute."
                         rows={6}
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
