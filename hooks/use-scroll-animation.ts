@@ -11,6 +11,7 @@ export function useScrollAnimation() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
+          observer.unobserve(entry.target)
         }
       },
       {
