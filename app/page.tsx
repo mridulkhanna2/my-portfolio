@@ -1161,19 +1161,19 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-white to-teal-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"
+        className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-white to-teal-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"
       >
         <div className="max-w-4xl mx-auto">
           <MotionWrapper>
             <div className="text-center mb-12">
-              <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-slate-900 dark:text-white flex items-center justify-center gap-4">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-slate-900 dark:text-white flex items-center justify-center gap-4">
                 Let's Connect
                 <div className="animate-bounce">
                   <Rocket className="w-10 h-10 text-teal-600 dark:text-teal-400" />
                 </div>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-teal-600 to-violet-600 mx-auto mb-8 animate-shimmer"></div>
-              <p className="text-xl text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+              <p className="text-lg text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
                 Open to{" "}
                 <span className="text-teal-600 dark:text-teal-400 font-semibold">internships, part-time roles</span>,
                 and data-driven project collaborations.
@@ -1184,9 +1184,9 @@ export default function Portfolio() {
           <MotionWrapper delay={0.2}>
             <div className="text-center">
               {/* Enhanced Profile Image */}
-              <div className="relative inline-block mb-10">
+              <div className="relative inline-block mb-8">
                 <div
-                  className="w-64 h-64 rounded-full bg-gradient-to-r from-teal-500 via-violet-500 to-blue-500 p-1 mx-auto group cursor-pointer hover:scale-110 transition-all duration-500 shadow-2xl shadow-teal-500/40"
+                  className="w-48 h-48 rounded-full bg-gradient-to-r from-teal-500 via-violet-500 to-blue-500 p-1 mx-auto group cursor-pointer hover:scale-110 transition-all duration-500 shadow-2xl shadow-teal-500/40"
                   style={{
                     filter: "drop-shadow(0 0 30px rgba(20, 184, 166, 0.3))",
                   }}
@@ -1214,7 +1214,7 @@ export default function Portfolio() {
 
               {/* Email Display with Copy Functionality */}
               <MotionWrapper delay={0.4}>
-                <div className="mb-10">
+                <div className="mb-8">
                   <div className="flex items-center justify-center gap-4 text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-300 p-6 rounded-2xl hover:bg-white/80 dark:hover:bg-slate-800/80 group max-w-lg mx-auto border border-slate-200/50 dark:border-slate-700/50 hover:border-teal-300/50 dark:hover:border-teal-500/50 backdrop-blur-sm shadow-lg hover:shadow-xl">
                     <Mail className="w-7 h-7 group-hover:scale-110 transition-transform duration-300" />
                     <div className="text-center flex-1">
@@ -1237,7 +1237,7 @@ export default function Portfolio() {
 
               {/* Enhanced CTA Buttons with Custom Colors */}
               <MotionWrapper delay={0.6}>
-                <div className="flex flex-col sm:flex-row justify-center gap-6 mb-8">
+                <div className="flex flex-col sm:flex-row justify-center gap-6 mb-6">
                   <a
                     href="https://www.linkedin.com/in/mridul-khanna29/"
                     target="_blank"
