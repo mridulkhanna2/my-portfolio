@@ -249,11 +249,13 @@ export default function Portfolio() {
   const allProjects = [
     {
       title: "Credit Risk Modeling",
-      problem: "Predicting borrower default risk for large-scale credit portfolios",
-      solution: "Built ensemble models (XGBoost, Decision Trees, Random Forest) to evaluate creditworthiness at scale",
+      problem:
+        "Financial institutions often misclassify borrower risk, leading to higher default rates and inequitable lending decisions.",
+      solution:
+        "Developed and compared multiple machine learning algorithms on a large scale credit dataset of 26K+ records. Implemented advanced preprocessing, feature engineering and applied hyperparameter tuning and ensemble methods to maximize predictive performance.",
       impact:
-        "Achieved 97.7% accuracy with XGBoost, improving recall for at-risk borrowers by 15% and reducing misclassification of potential defaults",
-      tech: ["Python", "XGBoost", "scikit-learn", "Pandas"],
+        "Achieved 97.7% accuracy, F1-score of 0.97, and AUC-ROC of 0.998, significantly improving recall for at-risk borrowers. The models also surfaced income and occupation trends, providing insights for fairer and more robust credit scoring.",
+      tech: ["Python", "scikit-learn", "Pandas", "NumPy", "XGBoost", "Decision Trees", "Random Forest"],
       icon: <BarChart3 className="w-6 h-6" />,
       gradient: "from-blue-500 to-purple-600",
     },
@@ -269,12 +271,13 @@ export default function Portfolio() {
     },
     {
       title: "Premature Mortality Prediction (US Counties)",
-      problem: "Premature mortality varies across 3,000+ US counties, but its drivers are poorly understood",
+      problem:
+        "Premature mortality varies across 3,000+ US counties, but the key social, behavioral, and health drivers are not well understood.",
       solution:
-        "Built regression models (Linear, Decision Tree) on health, socioeconomic, and behavioral datasets to identify mortality predictors",
+        "Conducted exploratory data analysis (EDA) on socioeconomic, health, and behavioral datasets. Used regression and decision trees to model mortality outcomes and rank predictors.",
       impact:
-        "Revealed top 5 factors (smoking, obesity, inactivity, income, healthcare access), providing evidence for health policy interventions",
-      tech: ["R", "EDA", "Regression", "Decision Trees", "Data Visualization"],
+        "Provided interpretable insights into top mortality predictors, supporting targeted interventions and public health planning.",
+      tech: ["R", "Regression", "Decision Trees", "Data Visualization"],
       icon: <Search className="w-6 h-6" />,
       gradient: "from-blue-500 to-cyan-600",
     },
@@ -517,6 +520,7 @@ export default function Portfolio() {
                 </div>
                 <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full animate-bounce shadow-lg shadow-emerald-400/50"></div>
                 <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse shadow-lg shadow-purple-400/50"></div>
+                <div className="absolute top-4 -left-4 w-3 h-3 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full animate-ping shadow-lg shadow-blue-400/50"></div>
               </div>
             </div>
           </div>
@@ -559,20 +563,20 @@ export default function Portfolio() {
 
                       <div className="text-slate-600 dark:text-slate-300 leading-relaxed space-y-4 group-hover:text-slate-800 dark:group-hover:text-white transition-colors duration-300">
                         <p>
-                          I started my career as a Backend Engineer at Bank of America, building APIs powering{" "}
+                          I began my career as a Backend Engineer at Bank of America, where I built APIs that powered{" "}
                           <AnimatedBadge delay={0.6} glow>
                             39M+ daily users
                           </AnimatedBadge>
-                          . While scaling platforms for performance and reliability, I discovered my passion for
-                          data-driven decision making.
+                          . While scaling platforms for performance and reliability, I discovered my passion for using
+                          data to drive smarter decision-making.
                         </p>
                         <p>
-                          Today, as a Master's in Computer Science (Data Science & AI) student at{" "}
+                          Today, as a Master's student in Computer Science (specializing in Data Science & AI) at the{" "}
                           <AnimatedBadge delay={0.8} glow>
                             University of Sydney
                           </AnimatedBadge>
-                          , I combine engineering and analytics to design solutions that accelerate measurable business
-                          growth.
+                          , I bring together my engineering background and data science skills to design solutions that
+                          create measurable business impact.
                         </p>
                       </div>
 
@@ -621,20 +625,21 @@ export default function Portfolio() {
 
                       <div className="text-slate-600 dark:text-slate-300 leading-relaxed space-y-4 group-hover:text-slate-800 dark:group-hover:text-white transition-colors duration-300">
                         <p>
-                          I thrive on transforming complex datasets into actionable intelligence — whether refining a
-                          credit-risk model to industry-leading accuracy, or designing executive dashboards that unlock{" "}
+                          I am driven by the challenge of transforming complex data into insights that lead to smarter
+                          decisions and measurable results. My focus is on building solutions that improve accuracy,
+                          reveal{" "}
                           <AnimatedBadge delay={0.8} glow>
-                            revenue opportunities
+                            opportunities
                           </AnimatedBadge>
-                          .
+                          , and create lasting business value.
                         </p>
                         <p>
-                          My work is guided by relentless curiosity: I constantly ask "Why?" and "What if?" to uncover
-                          hidden patterns and translate them into{" "}
+                          At my core, I'm guided by relentless curiosity. I constantly ask "Why?" and "What if?" to
+                          uncover patterns others might overlook and turn them into{" "}
                           <AnimatedBadge delay={1.0} glow>
                             meaningful outcomes
-                          </AnimatedBadge>
-                          .
+                          </AnimatedBadge>{" "}
+                          for stakeholders.
                         </p>
                       </div>
 
