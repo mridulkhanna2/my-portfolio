@@ -293,12 +293,13 @@ export default function Portfolio() {
     },
     {
       title: "Real-Time Malware Detection",
-      problem: "Malicious executables must be detected instantly with minimal false positives to secure user systems",
+      problem:
+        "Traditional malware scanners often work offline or rely on signature databases, making them too slow to detect zero-day or fast-evolving attacks.",
       solution:
-        "Implemented multiple ML classifiers (Random Forest, XGBoost, Logistic Regression) and optimized features for real-time prediction",
+        "Built a real-time malware detection system that monitors processes and network activity continuously, extracting behavioral features on the fly. Applied supervised machine learning models to classify processes as benign or malicious in real time, enabling proactive response instead of reactive scanning.",
       impact:
-        "Achieved 94% detection accuracy with 20% fewer false positives, enabling safer real-time threat response",
-      tech: ["Python", "scikit-learn", "Pandas"],
+        "Demonstrated faster detection and reduced false negatives compared to baseline approaches, showing how AI-driven real-time monitoring can strengthen system security and resilience.",
+      tech: ["Python", "scikit-learn", "Pandas", "Machine Learning", "Real-time Monitoring"],
       icon: <Award className="w-6 h-6" />,
       gradient: "from-purple-500 to-violet-600",
     },
